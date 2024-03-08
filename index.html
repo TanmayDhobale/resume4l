@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanmay Dhobale</title>
+
+    <style>
+      h1 {
+         font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+        }
+          h2 {
+            font-family: 'Roboto', sans-serif;
+        }
+        body, html { 
+            margin: 0; 
+            height: 100%; 
+            overflow-x: hidden; 
+            background-color: #000; 
+            color: white; 
+
+        }
+        #info {
+            position: absolute;
+            top: 50px; 
+            left: 50px; 
+            right: 50px; 
+            padding: 20px;
+            color: white;
+            z-index: 100;
+            overflow-y: auto;
+            height: calc(100% - 100px);
+        }
+        canvas { 
+            display: block; 
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .dim-text {
+            color: #999; 
+        }
+        ul {
+            list-style-type: none; 
+        }
+        ul li p {
+            margin: 0; 
+        }
+        .software-developer {
+            font-weight: normal; 
+            color: #999; 
+            font-size: 0.8em; 
+        }
+        .project-link {
+            color: #0099ff; 
+            text-decoration: none; 
+        }
+        @media screen and (max-width: 600px) {
+            #info {
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                height: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="info">
+    <h1 >Tanmay Dhobale <br>
+     <a href="https://github.com/TanmayDhobale" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/tanmaydhobale/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/tanmayy4l" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com/@tanmay4l?si=MVQowxwEulg6ruLZ" target="_blank"><i class="fab fa-youtube"></i></a></h1>
+    <p>Devops • Software Developer • Artist<br>Pune, Maharashtra, India</p>
+    <p>Hi I'm Tanmay and I'm involved as a Devops for BUILD apps, where I use my software engineering skills for pro-bono app/web development and tech consulting for the devops community. I also serve as a Designer for the Organizing Team, responsible for graphics design and production for the annual hackathon. I am interested in exploring the fields of Software Engineering, Data Science, Web3, Machine Learning, devops, kubernetes, and I am open to opportunities for the same.</p>
+    <p>Contact: workwithtanmayy@gmail.com</p>
+    <h2> • Skills</h2>
+    <ul>
+        <li> ・Languages
+            <p><span class="dim-text">My favorite languages for systems programming, software engineering, and data analysis.</span><br> ☞ TypeScript, JavaScript, Golang, Python, Java, Solidity</p>
+        </li>
+        <li> ・ Backend
+            <p><span class="dim-text">Expertise in backend development for scalable and robust applications.</span><br> ☞ Prisma, Flask, MongoDB, PostgreSQL, SQL, Express, Django, Rails</p>
+        </li>
+        <li> ・ Tools
+            <p><span class="dim-text">Proficient with a wide range of development and deployment tools.</span><br> ☞ Docker, Kubernetes, Terraform, GitHub, Jenkins</p>
+        </li>
+    </ul>
+
+    <h2> • Work Experience</h2>
+    <h4>・ DepressionHUB <span class="software-developer">Software Developer</span></h4>
+    <span>Led the upgrade of DepressionHUB's chatbot app, enhancing UX/UI with TypeScript & React, and streamlining backend processes with Node.js, Express, and PostgreSQL. Introduced Prisma for efficiency, boosting database operations by 20%, and developed an AI-driven chatbot in Python, increasing user engagement by 30%. Implemented secure payment solutions to ensure transaction safety.</span>
+
+    <h4>・ StackUp <span class="software-developer">Software development Quest Solver</span></h4>
+    <span>Successfully completed a wide range of quests on the Stackup platform, demonstrating problem-solving abilities and attention to detail.</span><br>
+    <span>Collaborated with diverse teams of fellow quest solvers to tackle complex challenges, fostering teamwork and communication skills</span><br>
+    <span>Designed the front-end using React with Redux for state management and performed API integration of 10+ endpoints, followed by containerizing the application through Docker for easier deployment in an expansive micro-service architecture</span>
+    <div class="projects">
+        <h2> • Projects</h2>
+        <a href="https://tanmaydhobale.github.io/WatchFree/" target="_blank" class="project-link">・Movie Streaming Website</a>
+        <p><span onclick="toggleDescription('desc1')" style="color: #999; cursor: pointer;">Read more</span></p>
+        <p id="desc1" style="display:none;">
+            Developed a single-page web application that allows users to watch their favorite movies, web series, TV shows, and anime for free. The platform is known for its ultra-fast loading times and user-friendly interface, providing an exceptional viewing experience without subscription.
+            <span onclick="toggleDescription('desc1')" style="color: #999; cursor: pointer;">Read less</span>
+        </p>
+
+        <a href="https://github.com/TanmayDhobale/github-sol-auto-dispenser.git" target="_blank" class="project-link">・GitHub SOL Auto Dispenser</a>
+        <p><span onclick="toggleDescription('desc2')" style="color: #999; cursor: pointer;">Read more</span></p>
+        <p id="desc2" style="display:none;">
+            Create a GitHub app that listens to events on a PR and dispenses users' funds in crypto using the SOL blockchain.
+            <span onclick="toggleDescription('desc2')" style="color: #999; cursor: pointer;">Read less</span>
+        </p>
+
+        <a href="https://github.com/TanmayDhobale/mental-health-monitoring.git" target="_blank" class="project-link">・Mental Health Monitoring App</a>
+        <p><span onclick="toggleDescription('desc3')" style="color: #999; cursor: pointer;">Read more</span></p>
+        <p id="desc3" style="display:none;">
+            The Mental Health Monitoring App is a compassionate technological solution designed to support individuals in tracking and understanding their emotional well-being through the power of Natural Language Processing (NLP). The project leverages cutting-edge NLP techniques and libraries for insightful mental health monitoring.
+            <span onclick="toggleDescription('desc3')" style="color: #999; cursor: pointer;">Read less</span>
+        </p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.139.0/build/three.min.js"></script>
+<script>
+    let scene, camera, renderer, starParticles;
+    let mouse = { x: 0, y: 0 };
+
+    function init() {
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 5;
+
+        renderer = new THREE.WebGLRenderer({antialias: true});
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        addStarField();
+
+        document.addEventListener('mousemove', onDocumentMouseMove, false);
+        window.addEventListener('resize', onWindowResize, false);
+
+        animate();
+    }
+
+    function addStarField() {
+        const starGeometry = new THREE.BufferGeometry();
+        const starMaterial = new THREE.PointsMaterial({
+            color: 0xffffff,
+            size: 0.1,
+            sizeAttenuation: true,
+            transparent: true,
+            opacity: 0.7
+        });
+        const starCount = 20000;
+        const positions = new Float32Array(starCount * 3);
+        
+        for (let i = 0; i < starCount * 3; i++) {
+            positions[i] = (Math.random() - 0.5) * 2000;
+        }
+
+        starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        starParticles = new THREE.Points(starGeometry, starMaterial);
+
+        scene.add(starParticles);
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        // Dynamic Star Field
+        starParticles.rotation.x += (mouse.y * 0.0005);
+        starParticles.rotation.y += (mouse.x * 0.0005);
+
+        renderer.render(scene, camera);
+    }
+
+    function onDocumentMouseMove(event) {
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    }
+
+    function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    init();
+
+    function toggleDescription(descId) {
+        let element = document.getElementById(descId);
+        element.style.display = element.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+</body>
+</html>
